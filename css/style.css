@@ -1,0 +1,162 @@
+:root {
+  --mainColor: #e47274;
+}
+/* gineral proparity */
+* {
+  box-sizing: border-box;
+}
+html {
+  /* position: relative; */
+  height: 100%;
+}
+body {
+  font-family: "Almarai", sans-serif !important;
+  padding: 0;
+  margin: 0;
+  /* position: relative; */
+  height: 100%;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+a {
+  color: inherit !important;
+}
+.nav-link {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.rounded-3 {
+  border-radius: 10px !important;
+}
+/* bg */
+.bg-mainColor {
+  background-color: var(--mainColor);
+}
+/* color */
+.text-mainColor {
+  color: var(--mainColor);
+}
+/* style items */
+.HB1:hover {
+  color: white;
+  background-color: transparent;
+}
+#navbarScrollingDropdown::after {
+  margin-right: 5px;
+  vertical-align: initial !important;
+}
+.mainText {
+  font-weight: 900 !important;
+  font-size: 50px !important;
+  line-height: 5rem;
+}
+.line {
+  position: relative;
+  display: inline-block;
+}
+.line::after {
+  display: inline-block;
+  position: absolute;
+  width: 105%;
+  height: 37%;
+  top: 57%;
+  left: 0;
+  right: -3px;
+  background-color: var(--mainColor);
+  content: "";
+  z-index: -1;
+  opacity: 0.9;
+}
+/* Demo styles */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: min-content;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body > div.position-relative > div.swiper-button-next {
+  left: 10% !important;
+  right: auto;
+}
+body > div.position-relative > div.swiper-button-prev {
+  right: 10% !important;
+}
+body > div.position-relative > div.swiper-button-next::after {
+  content: "prev";
+  font-size: 30px;
+  font-weight: 900;
+  background: var(--mainColor);
+  height: 60px;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 50%;
+}
+
+body > div.position-relative > div.swiper-button-prev::after {
+  content: "next";
+  font-size: 30px;
+  font-weight: 900;
+  background: var(--mainColor);
+  height: 60px;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 50%;
+}
+@media (max-width: 760px) {
+  .swiper-button-next {
+    left: 5% !important;
+    right: auto;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    right: 5% !important;
+    transform: rotate(90deg);
+  }
+}
+@keyframes animation {
+  form {
+    width: 25px;
+    height: 25px;
+  }
+  to {
+    width: 37px;
+    height: 37px;
+  }
+}
+.animation {
+  animation-name: animation;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+body > section:nth-child(17) > div > div {
+  min-height: 150px;
+}
+body > div.position-relative {
+  height: inherit;
+}

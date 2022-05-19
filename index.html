@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@400;900;1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>عفتي</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-mainColor text-white fs-4">
+        <div class="container" style="max-width: 1500px;">
+            <a class="navbar-brand" href="#">
+                <h1 class="fw-bold  fs-1 d-flex">
+                    <div style="width: 40px; height: 40px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="animation"
+                            style="width: 33px; height: 33px; fill:white;">
+                            <path
+                                d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
+                        </svg>
+                    </div>
+                    عفتي
+                </h1>
+            </a>
+            <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root css-uqopch" focusable="false"
+                    aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon" style="width: 35px;height: 35px;">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" style="fill: white;"></path>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav m-auto fw-bolder">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            خدمات
+                        </a>
+                        <ul class="dropdown-menu text-mainColor text-end" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">إستشارات مباشرة</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">حل المشاكل الجنسية </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">دورات تكوينية</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">منتجات للازواج</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            حول عفتي
+                        </a>
+                        <ul class="dropdown-menu text-mainColor text-end" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">قصص النجاح</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">المدونة </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">اتصل بنا </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">شروط الاستخدام </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> سياسة الخصوصية</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">الأسئلة المتداولة </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="width: max-content;" href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex border-start border-end">
+                    <button class="btn mx-3 btn-light fs-4 fw-bolder px-3 py-2 w-50 rounded-3 HB1">إشتراك</button>
+                    <button
+                        class="btn mx-3 btn-outline-light text-dark py-2 px-3  fs-4 w-50 fw-bolder rounded-3">تسجيل</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 75px;"></div>
+    <!-- section one (main) -->
+    <section class="container row m-auto text-xl-end text-center my-5 pt-5">
+        <div class="col-12 col-xl-6">
+            <h2 class="mainText">
+                موقع عفتي
+                <span class="line">
+                    للزواج
+                </span> الإسلامي والإستشارات الأسرية
+            </h2>
+            <p class="fs-4">قال تعالى:
+                {وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
+                بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ}<br> سورة الروم:[ الآية:21]
+                <br> <br>
+                و قال رسول الله صلى الله عليه وسلم: [يَا مَعْشَرَ الشَّبَابِ، مَنِ اسْتَطَاعَ مِنْكُمُ الْبَاءَةَ
+                فَلْيَتَزَوَّجْ، فَإِنَّهُ أَغَضُّ لِلْبَصَرِ، وَأَحْصَنُ لِلْفَرْجِ.] <br> رواه البخاري.
+            </p>
+            <button class="btn bg-mainColor text-white fs-2 px-5 py-3 rounded-3 my-4">إشترك الآن</button>
+        </div>
+        <div class="col-12 col-xl-6"> <img src="./images/channels4_profile.jpg" width="100%" alt="img"></div>
+    </section>
+    <!-- section tow -->
+    <hr class="container">
+    <section class="container text-center fs-1 fw-bold my-5 pt-5 position-relative overflow-hidden">
+        <div class="position-absolute top-0" style="left: 0;z-index: -1; transform: rotate(-25deg);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                style="width: 150px; height: 150px; fill:#f68789; opacity: .7;">
+                <path
+                    d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
+            </svg>
+        </div>
+        <div class="position-absolute top-0" style="left: 90px;z-index: -1; transform: rotate(-25deg); ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                style="width: 150px; height: 150px; fill:#f68789; opacity: .7;">
+                <path
+                    d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
+            </svg>
+        </div>
+        <p class="mainText text-mainColor">
+            قصتك مع الاستعفاف تبدأ من هنا
+        </p>
+        <p class="fs-4 fw-bold">
+
+            ومن يستعفف يعفه الله <br>
+            العفة خلق إسلامي يحملك على ترك الحرام والسعي للحلال طاعة لله
+            حلول المشاكل الأسرية، والتعامل مع الطفل وفق قواعد الشرع، وإيجاد أجوبة مقنعة غاية نسعى إليها في موقع عفتي
+            نوفر لكم خدمات متنوعة تساعدكم لاختيار شريك الحياة وتربية الأبناء وتلبيات الحاجات النفسية والروحية لكم
+            ولذويكم
+        </p>
+    </section>
+    <!-- section three -->
+    <p class="mainText text-mainColor py-5 text-center">يوفر موقع عفتي خدمات متنوعة من بينها </p>
+    <div class="position-relative">
+        <section class="swiper container text-center mt-5 position-relative">
+            <div class="swiper-wrapper">
+                <!-- one -->
+                <div class="swiper-slide">
+                    <div class="border rounded-3 flex-column p-2 m-3 bg-light">
+                        <img src="./images/channels4_profile.jpg" alt="img" width="100%" class="d-block">
+                        <p class="fs-2 fw-bold text-mainColor">دورات تكوينية </p>
+                        <p class="fs-5">يخصص الموقع دورات تكوينية للمشتركين، يتم من خلالها تأهيلهم لمعرفة مواصفات شريك
+                            الحياة،
+                            وأحكام الخطوبة، وليلة الدخلة، والحقوق الزوجية، والإشكالات الأسرية..
+                        </p>
+                        <button class="btn bg-mainColor border-5 fs-4 fw-bolder text-white">تعرف على المزيد</button>
+                    </div>
+                </div>
+                <!-- tow -->
+                <div class="swiper-slide ">
+                    <div class="border rounded-3 flex-column p-2 m-3 bg-light">
+                        <img src="./images/channels4_profile.jpg" alt="img" width="100%" class="d-block">
+                        <p class="fs-2 fw-bold text-mainColor">إستشارات مباشرة </p>
+                        <p class="fs-5">يوفر موقع عفتي خدمة الاستشارة المباشرة المرئية والصوتية والكتابية مع ثلة من
+                            الدكاترة
+                            والمشايخ والباحثين والخبراء في قواعد الحياة الزوجية، وأصول السعادة الأسرية، وفنون التعامل مع
+                            الأبناء
+                            في مختلف مراحل العمر، وطرق حل مشكلات التواصل بين أفراد الأسرة، وعلاج الخلافات، وتقريب وجهات
+                            النظر.
+                        </p>
+                        <button class="btn bg-mainColor border-5 fs-4 fw-bolder text-white">تعرف على المزيد</button>
+                    </div>
+                </div>
+                <!-- three -->
+                <div class="swiper-slide ">
+                    <div class="border rounded-3 flex-column p-2 m-3 bg-light">
+                        <img src="./images/channels4_profile.jpg" alt="img" width="100%" class="d-block">
+                        <p class="fs-2 fw-bold text-mainColor">منتجات للازواج </p>
+                        <p class="fs-5">متجر عفتي يقدم للزبناء منتجات متنوعة وهدايا للزواج…. ملابس، كتب، عطور، مواد
+                            تجميل،
+                            مواد
+                            طبيعية زيت الأركان، عسل، حبوب لقاح، وصفات نافعة….. </p>
+                        <button class="btn bg-mainColor border-5 fs-4 fw-bolder text-white">تعرف على المزيد</button>
+                    </div>
+                </div>
+                <!-- foure -->
+
+                <div class="swiper-slide ">
+                    <div class="border rounded-3 flex-column p-2 m-3 bg-light">
+                        <img src="./images/channels4_profile.jpg" alt="img" width="100%" class="d-block">
+                        <p class="fs-2 fw-bold text-mainColor">حل المشاكل الجنسية
+                        </p>
+                        <p class="fs-5">يعاني كثير من الأزواج من مشاكل جنسية حولت حياتهم الزوجية إلى جحيم دائم، ويخشى
+                            أغلب
+                            الناس،
+                            من
+                            مناقشة هذه المواضيع، ويعتبرونها خط أحمرا، ويختارون الاستسلام والعيش في هذا الواقع البئيس
+                            المظلم.
+                            موقع عفتي يقدم المساعدة ويسعى للوصول إلى الحلول الشرعية والبدائل لكثير من مشكلات الأزواج
+                            الجنسية،
+                            والتواصلية.
+                        </p>
+                        <button class="btn bg-mainColor border-5 fs-4 fw-bolder text-white">تعرف على المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- section foure -->
+    <section class="container-fluid bg-light text-center py-5 my-5">
+        <p class="fs-3 fw-bolder ">
+            وغيرها من الخدمات التي ستساعدك على اختيار شريك الحياة المناسب، وحل
+            مشاكل الحياة الأسرية.
+        </p>
+        <button class="btn bg-mainColor text-white fs-3 px-5 py-3 rounded-3 my-4">إشترك الآن</button>
+    </section>
+    <!--section five  -->
+    <hr class="container">
+    <section class="container text-center fs-1 fw-bold my-5 pt-5">
+        <p class="mainText text-mainColor">
+            لماذا موقع 3ifati؟
+        </p>
+        <p class="fs-4 fw-bold">
+            في ظل ما تعيشه البشرية من فتن الشهوات والشبهات، ومن نفور عن الزواج والارتباط، وفي ظل ما نراه في مجتمعنا
+            اليوم من تهافت على المحرمات، واتخاذ الأخدان والخليلات، والخوف من الزواج، والعجز عن حل مشكلات الحياة الزوجية،
+            ورفض الاعتراف بالعجز والضعف، واللجوء للعقاقير والمهيجات، والمشعوذين والساحرات، وبرود العلاقة الزوجية ونفور
+            الطرفين عن بعض وإهمال الأولاد، والمسارعة للخيانة…
+            جاء موقع عفتي ليقلب الموازين، ويقدم الحلول الممكنة، ويساعدكم من خلال خدمات تؤهلكم لاختيار شريك الحياة
+            المناسب، وتساعدكم لحل مشاكل الحياة الأسرية.
+            موقع عفتي جاء ليحل مشكلة من مشاكل العصر وهي البحث عن السند الحقيقي والشريك الصالح الذي يعينك على دينك
+            ودنياك، هو الموقع المغربي الأول الذي يساعد العزاب والعازبات المسلمين في العثور على شريك حياتهم بطريقة شرعية،
+            ويواكب مسار الحياة الزوجية والأسرية من خلال الخدمات التي تجدونها في موقع عفتي.
+        </p>
+    </section>
+    <hr class="container">
+    <!-- section six -->
+    <section class="container m-auto py-5  row align-items-center">
+        <p class="fs-1 mainText text-mainColor text-center col-112 mb-5">ما الامتيازات التي يوفرها الموقع ؟</p>
+
+        <div class="p-2 col-12 col-xl-6">
+            <p class="fs-4 fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    style="fill: #f68789; width: 30px; height: 30px; margin-left: 8px;">
+                    <path
+                        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z" />
+                </svg>
+                تؤهلكم لاختيار شريك الحياة المناسب.
+            </p>
+            <p class="fs-4 fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    style="fill: #f68789; width: 30px; height: 30px; margin-left: 8px;">
+                    <path
+                        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z" />
+                </svg>
+                يوفر موقع عفتي خدمة الاستشارة المباشرة المرئية والصوتية والكتابية مع ثلة من الدكاترة والمشايخ
+                والباحثين
+                والخبراء في قواعد الحياة الزوجية،
+            </p>
+            <p class="fs-4 fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    style="fill: #f68789; width: 30px; height: 30px; margin-left: 8px;">
+                    <path
+                        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z" />
+                </svg>
+                تساعدكم لحل مشاكل الحياة الأسرية.
+            </p>
+            <p class="fs-4 fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    style="fill: #f68789; width: 30px; height: 30px; margin-left: 8px;">
+                    <path
+                        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z" />
+                </svg>
+                يواكب مسار الحياة الزوجية والأسرية من خلال الخدمات التي تجدونها في موقع عفتي.
+            </p>
+            <p class="fs-4 fw-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    style="fill: #f68789; width: 30px; height: 30px; margin-left: 8px;">
+                    <path
+                        d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z" />
+                </svg>
+                فنون التعامل مع الأبناء في مختلف مراحل العمر، وطرق حل مشكلات التواصل بين أفراد الأسرة، وعلاج الخلافات،
+                وتقريب وجهات النظر.
+            </p>
+        </div>
+        <div class="col-12 col-xl-6 rounded-3 p-3"> <img src="./images/services.jpg" class="w-100 h-100 rounded-3"
+                alt="services">
+        </div>
+
+        </div>
+    </section>
+    <!-- section sevin -->
+    <hr class="container">
+    <p class="mainText text-center  text-mainColor py-5">كيف يعمل الأمر</p>
+    <section class="container  m-auto row my-5">
+        <div class="col-12 col-md-6 col-xl-4 p-2 ">
+            <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center shadow h-100 ">
+                <p class="d-flex justify-content-center ms-3 rounded-pill align-items-center bg-mainColor text-white fw-bold fs-2"
+                    style="min-width: 50px; height:50px; ">
+                    1
+                </p>
+                <p>
+                    <span class="text-mainColor d-block fs-4 fw-bold">انشئ حسابك الخاص :</span>قم بإنشاء حسابك الخاص
+                    على
+                    موقع عفتي
+                    من خلال
+                    <a href="" class="text-mainColor">
+                        الضغط هنا
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+            <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center shadow h-100">
+                <p class="d-flex justify-content-center ms-3 rounded-pill align-items-center bg-mainColor text-white fw-bold fs-2"
+                    style="min-width: 50px; height:50px; ">
+                    2
+                </p>
+                <p>
+                    <span class="text-mainColor d-block fs-4 fw-bold"> قم بإعداد ملفط الخاص : </span>
+                    قم بالتسجيل الى حسابك الخاص وقم بوضع جميع معلوماتك الخاصة التي تعرف عنك
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+            <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center shadow h-100">
+                <p class="d-flex justify-content-center ms-3 rounded-pill align-items-center bg-mainColor text-white fw-bold fs-2"
+                    style="min-width: 50px; height:50px; ">
+                    3
+                </p>
+                <p>
+                    <span class="text-mainColor d-block fs-4 fw-bold">ابحث عن شريك حياتك : </span>
+                    قم بالتوجه الى ركن البحث وابحث عن شريك حياتك الخاص بالمواصفات التي ترغب بها نفسك
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+            <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center shadow h-100">
+                <p class="d-flex justify-content-center ms-3 rounded-pill align-items-center bg-mainColor text-white fw-bold fs-2"
+                    style="min-width: 50px; height:50px; ">
+                    4
+                </p>
+                <p>
+                    <span class="text-mainColor d-block fs-4 fw-bold"> تواصل مع ولي الأمر : </span>
+                    « الأرواح جنود مجندة فما تعارف منها ائتلف، وما تناكر منها اختلف»
+                    <br>
+                    إذا حصل التوافق في البيانات والصفات المطلوبة بينك وبين الشريك الذي ترغب به بادر وسارع بالتواصل
+                    مع
+                    ولي أمر الفتاة التي تراها مناسبة لك
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+            <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center shadow h-100">
+                <p class="d-flex justify-content-center ms-3 rounded-pill align-items-center bg-mainColor text-white fw-bold fs-2"
+                    style="min-width: 50px; height:50px; ">
+                    5
+                </p>
+                <p>
+                    <span class="text-mainColor d-block fs-4 fw-bold">الاستخارة والاستشارة : </span>
+                    الإستخارة سنة نبوية نافعة
+                    صل ركعتين وبعد سلامك ادع دعاء الاستخارة وسم حاجتك ورغبتك.
+                    إستخر الله عز وجل في شريك حياتك واستشر أهل المعرفة ومن هم أقرب الناس إليه في محيطه وفي مجتمعه
+                    واسأل
+                    الله التوفيق والسداد وأن يرزقك السند الصالح
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+            <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center shadow h-100">
+                <p class="d-flex justify-content-center ms-3 rounded-pill align-items-center bg-mainColor text-white fw-bold fs-2"
+                    style="min-width: 50px; height:50px; ">
+                    6
+                </p>
+                <p>
+                    <span class="text-mainColor d-block fs-4 fw-bold">واتوا البيوت من أبوابها : </span>
+                    اجتنب ما حرم الله في تواصلك، فلا بركة في الحرام، تواصل مع من اخترته بطريقة شرعية وتوجه إلى بيت
+                    الأسرة والعائلة واحذر من خطوات الشيطان
+                    بعد أن تستخير وتستشير توكل على ربك واطرق الباب
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 8 -->
+    <hr class="container">
+    <p class="mainText text-center  text-mainColor py-5">المشاكل والحلول التي تقدمها المنصة ؟</p>
+    <section class="container m-auto row my-5">
+        <div class=" row col-12 col-lg-8">
+            <div class="col-12 col-md-6 col-xl-4 p-2 ">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100 ">
+                    حل المشاكل الجنسية
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div
+                    class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100 text-center">
+                    انعدام التواصل والفتور في العلاقات بين أفراد الأسرة
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    الضعف الجنسي
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    البرود العاطفي
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    الشذوذ في العلاقة
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    الإشكالات الأسرية
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    قواعد التعامل بين الأزواج
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    قواعد تربية الأولاد
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <div class="rounded-3 p-3 fs-5 fw-bold d-flex align-items-center justify-content-center shadow h-100">
+                    تقريب وجهات النظر
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4"><img src="./images/1724-1.jpg" class="w-100 h-100 rounded-3" alt="img"></div>
+    </section>
+    <!-- section 9 (videos) -->
+    <hr class="container">
+    <p class="mainText text-center  text-mainColor py-5">من نحن؟</p>
+    <section class="container m-auto row ">
+        <video class="col-12 col-lg-6 my-5 rounded-3" controls>
+            <source src="./images/WhatsApp Video 2022-05-17 at 9.47.42 PM (1).mp4" type="video/mp4">
+            من نحن؟
+        </video>
+        <video class="col-12 col-lg-6 my-5 rounded-3" controls>
+            <source src="./images/WhatsApp Video 2022-05-17 at 9.47.42 PM.mp4" type="video/mp4">
+            من نحن؟
+        </video>
+    </section>
+    <!-- footer -->
+    <footer class="container-fluid py-3 px-5 m-0 bg-mainColor text-center text-lg-end">
+        <div class="border-bottom border-white row border-3 py-3">
+            <h1 class="fw-bold  fs-1 col-12 col-lg-6 text-white py-2">عفتي</h1>
+            <!-- icons -->
+            <div class="col-12 col-lg-6 text-center text-lg-start align-self-center">
+                <!-- youtube -->
+                <a href="" class="mx-1 m-lg-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="border p-1 rounded-2"
+                        style="width: 40px; height: 40px; fill: white;">
+                        <path
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                    </svg>
+                </a>
+                <!-- twetter -->
+                <a href="" class="mx-1 m-lg-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="border p-1 rounded-2"
+                        style="width: 40px; height: 40px; fill: white;">
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                    </svg>
+                </a>
+                <!-- linked in -->
+                <a href="" class="mx-1 m-lg-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="border p-1 rounded-2"
+                        style="width: 40px; height: 40px; fill: white;">
+                        <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                    </svg></a>
+                <!-- instargam -->
+                <a href="" class="mx-1 m-lg-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="border p-1 rounded-2"
+                        style="width: 40px; height: 40px; fill: white;">
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <!-- facebook -->
+                <a href="" class="mx-1 m-lg-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="border p-1 rounded-2"
+                        style="width: 40px; height: 40px; fill: white;">
+                        <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="row py-3 border-3 border-white border-bottom">
+            <div class="col-12 col-lg-4 ">
+                <p href="" class="text-white text-decoration-none d-block py-1 fs-3">روابط تهمك:</p>
+                <a href="" class="text-white text-decoration-none d-block py-1">قصص النجاح </a>
+                <a href="" class="text-white text-decoration-none d-block py-1">المدونة </a>
+                <a href="" class="text-white text-decoration-none d-block py-1">اتصل بنا </a>
+                <a href="" class="text-white text-decoration-none d-block py-1">شروط الاستخدام</a>
+                <a href="" class="text-white text-decoration-none d-block py-1">سياسة الخصوصية</a>
+                <a href="" class="text-white text-decoration-none d-block py-1">الأسئلة المتداولة</a>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p href="" class="text-white py-1 fs-3">حول عفتي:</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p href="" class="text-white py-1 fs-3">تواصل معنا:</p>
+                <p href="" class="text-white py-1">1234567</p>
+                <p href="" class="text-white py-1">1234567</p>
+                <p href="" class="text-white py-1">1234567</p>
+                <p href="" class="text-white py-1">1234567</p>
+            </div>
+
+        </div>
+        <p class="text-white pt-2">جميع الحقوق محفوظة 2022 C</p>
+    </footer>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: window.innerWidth <= 960 ? 1 : 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/289b476fa4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
