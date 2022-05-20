@@ -125,6 +125,13 @@ body > div.position-relative > div.swiper-button-prev::after {
   color: white;
   border-radius: 50%;
 }
+
+@media (max-width: 991px) {
+  #navbarTogglerDemo01 {
+    height: 100vh;
+    transition: all 0s;
+  }
+}
 @media (max-width: 760px) {
   .swiper-button-next {
     left: 5% !important;
