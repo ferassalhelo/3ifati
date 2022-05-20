@@ -52,7 +52,7 @@ a {
 }
 .mainText {
   font-weight: 900 !important;
-  font-size: 50px !important;
+  font-size: 3.2rem !important;
   line-height: 5rem;
 }
 .line {
@@ -131,7 +131,10 @@ body > div.position-relative > div.swiper-button-prev::after {
     right: auto;
     transform: rotate(90deg);
   }
-
+  .mainText {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
   .swiper-button-prev {
     right: 5% !important;
     transform: rotate(90deg);
