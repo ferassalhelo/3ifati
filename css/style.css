@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #e47274;
+  --mainColor:#ff62b5;
 }
 /* gineral proparity */
 * {
@@ -13,8 +13,8 @@ body {
   font-family: "Almarai", sans-serif !important;
   padding: 0;
   margin: 0;
-  /* position: relative; */
   height: 100%;
+  perspective: 1500px;
 }
 .navbar {
   position: fixed;
@@ -52,7 +52,7 @@ a {
 }
 .mainText {
   font-weight: 900 !important;
-  font-size: 3.2rem !important;
+  font-size: 2.8rem !important;
   line-height: 5rem;
 }
 .line {
@@ -133,18 +133,27 @@ body > div.position-relative > div.swiper-button-prev::after {
   }
 }
 @media (max-width: 760px) {
+  body > section.container.m-auto.row.my-5.justify-content-center.justify-content-lg-start >
+   div.row.col-12.justify-content-center.justify-content-lg-start.col-lg-8 > div.col-12.col-md-6.col-xl-4.rot{
+    min-height: 150px;
+  }
   .swiper-button-next {
     left: 5% !important;
     right: auto;
-    transform: rotate(90deg);
+    opacity:.7 ;
+    /* transform: rotate(90deg); */
+  }
+  .swiper-button-next:hover,.swiper-button-prev:hover{
+    opacity: 1;
   }
   .mainText {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2rem !important;
+    line-height: 3rem !important;
   }
   .swiper-button-prev {
     right: 5% !important;
-    transform: rotate(90deg);
+    opacity: .7;
+    /* transform: rotate(90deg); */
   }
 }
 @keyframes animation {
@@ -169,4 +178,36 @@ body > section:nth-child(17) > div > div {
 }
 body > div.position-relative {
   height: inherit;
+}
+.rot{
+  margin-top: 20px !important;
+}
+.rot > div{
+  text-align: center;
+  transition: transform .5s;
+transform-style: preserve-3d;
+padding: 80px 0;
+}
+.rot:hover > div{
+  transform: rotateX(180deg);
+  transition: transform .5s;
+}
+.fir{
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0
+}
+.sec{
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+transform: rotateX(180deg);
+top: 0;
+left: 0;
+right: 0;
+bottom:0
 }
